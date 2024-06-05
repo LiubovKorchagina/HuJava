@@ -1,0 +1,16 @@
+import java.util.Scanner;
+// Дано двузначное число. 
+// Определить: 
+// остаток от деления десятков на единицы, результат деления единиц на десятки
+class qwerty {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int m = n / 10; //кол-во десятков
+        int c = n - m * 10; //количество единиц
+
+        System.out.println("Количество десятков: " + m);
+        System.out.println("Количество единиц: "+ c);
+    }
+}

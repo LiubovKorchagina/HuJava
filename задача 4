@@ -1,0 +1,14 @@
+import static java.lang.Math.sqrt;
+
+class Classes {
+    public static void main(String[] args) {
+        double a = 8;
+        double b = 81.0;
+        double c = sqrt(b);
+
+        if (c > a) {System.out.println(b * 5.0);
+          } else {
+           System.out.println("Неверно");
+        }
+    }
+}

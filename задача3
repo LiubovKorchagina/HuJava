@@ -1,0 +1,36 @@
+import javax.lang.model.util.SimpleElementVisitor14;
+import java.net.SocketOption;
+//3.	Даны стороны двух треугольников. Найти сумму их периметров и сумму их площадей.
+// (Определить процедуру для расчета периметра и площади треугольника по его сторонам.
+public class May271 {
+    public static void main(String[] args) {
+        int a = 4;
+        int b = 7;
+        int c = 7;
+        int a1 = 5;
+        int b1 = 4;
+        int c1 = 6;
+
+        int p = perimetr(a, b, c);
+        int p1 = perimetr(a1, b1, c1);
+        System.out.println("P = " + p);
+        System.out.println("P = " + p1);
+
+        double s = square(p, a, b, c);
+        double s1 = square(p1, a1, b1, c1);
+        System.out.println("S = " + square(p,a,b,c));
+        System.out.println("S1 = " + square(p1,a1,b1,c1));
+
+        System.out.println ("Сумма периметров = "+ (p + p1));
+         System.out.println ("Сумма площадей = "+ (s + s1));
+}
+    public static int perimetr (int a, int b, int c) {
+ return a + b + c;
+    }
+public static double square (int p, int a, int b, int c){
+int pp = p/2;
+return Math.sqrt(pp*(pp-a)*(pp-b)*(pp-c));
+}
+
+}
+

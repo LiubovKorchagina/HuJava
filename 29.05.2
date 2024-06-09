@@ -1,18 +1,13 @@
-import javax.lang.model.util.SimpleElementVisitor14;
-import java.io.PrintStream;
-import java.net.SocketOption;
-import java.util.Scanner;
 // 2.	Напечатать числа следующим образом:
 //25 25.5 24.8
-// 26 26.5 25.8
+//26 26.5 25.8
 //35 35.5 34.8
 
 public class May271 {
     public static void main(String[] args) {
+        for (int i = 25; i <= 35; i++) {
+            System.out.println (i + " " + (i+0.5) + " " + (i - 0.2));
 
-       System.out.println("25, 25.5, 24.8");
-        System.out.println("26, 26.5, 25.8");
-        System.out.println("35, 35.5, 34.8");
-
+        }
     }
 }

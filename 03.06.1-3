@@ -2,14 +2,12 @@
 public class May271 {
     public static void main(String[] args) {
        int [] а = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-
-
     }
 }
+
 // 2.Вывести элементы массива на экран в обратном порядке.
 public class May271 {
     public static void main(String[] args) {
-
        int length = 0;
         int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};;
         for (int element: a) {
@@ -20,6 +18,7 @@ public class May271 {
         }
     }
 }
+
 // 3.1 Определить сумму всех элементов массива;
 public class May271 {
     public static void main(String[] args) {
@@ -42,6 +41,31 @@ public class May271 {
                {multi *= a[i];
 
                    System.out.println(multi);
+        }
+    }
+}
+
+// 3.3 определить сумму квадратов всех элементов массива;
+class May271 {
+           public static void main(String[] args) {
+            int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+            int sumOfSquares = 0;
+
+            for (int i = 0; i < a.length; i++) {
+                sumOfSquares += a[i] * a[i];
+            }
+            System.out.println("Сумма квадратов чисел в массиве: " + sumOfSquares);
+        }
+    }
+
+// 3.4 определить сумму первых 6 элементов массива;
+class May271 {
+    public static void main(String[] args) {
+        int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+        int sum = 0;
+        for (int i = 0; i < 7; i++)
+        {  sum = sum +a [i];
+            System.out.println(sum);
         }
     }
 }

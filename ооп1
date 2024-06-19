@@ -1,0 +1,90 @@
+public class Phone {
+    String name;
+    private String number;
+    String model;
+    private String weight;
+
+    public Phone() {
+
+    }
+
+    public void setName(String name) {
+        this.name = name;
+        System.out.println("Имя:" + name);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+        System.out.println("Номер  :" + number);
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setWeight(String weight) {
+        this.weight = weight;
+        System.out.println("Вес:" + weight);
+    }
+
+    public String getWeight() {
+        return weight;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+        System.out.println("Модель:" + model);
+    }
+    public String getModel() {
+        return model;
+    }
+
+    public void receiveCall() {
+        System.out.println("Звонит " + name);
+    }
+    public Phone(String name, String number, String model, String weight) {
+        this.name = name;
+        this.number = number;
+        this.model = model;
+        this.weight = weight;
+    }
+}
+ Вторая страница
+
+package Phones;
+
+public class VV {
+    public static void main(String[] args) {
+
+        Phone Phone1 = new Phone("Иван", "89899325544", "Iphone 10", "4");
+        System.out.println("Имя :" + Phone1.getName());
+        System.out.println("Номер :" + Phone1.getNumber());
+        System.out.println("Модель :" + Phone1.getModel());
+        System.out.println("Вес :" + Phone1.getWeight());
+//        receiveCall(Phone1.getName());
+//        getNumber(Phone1.getNumber());
+
+
+        Phone Phone2 = new Phone("Анна", "89182454444", "Samsung", "3");
+        System.out.println("Имя :" + Phone2.getName());
+        System.out.println("Номер :" + Phone2.getNumber());
+        System.out.println("Модель :" + Phone2.getModel());
+        System.out.println("Вес :" + Phone2.getWeight());
+
+        Phone Phone3 = new Phone("Михаил", "899412335566", "Xiaomi", "2");
+        System.out.println("Имя :" + Phone3.getName());
+        System.out.println("Номер :" + Phone3.getNumber());
+        System.out.println("Модель :" + Phone3.getModel());
+        System.out.println("Вес :" + Phone3.getWeight());
+    }
+}
+
+//    public void receiveCall() {
+//        System.out.println("Звонит " + Phone.getName());
+
+//    public String getNumber() {
+//        return number;

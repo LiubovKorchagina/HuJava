@@ -1,0 +1,17 @@
+{
+    "customers": 
+{
+    "id": 45,
+    "username": "малышка", 
+    "firstName": "Лариса", 
+    "lastName": "Ковальчук", 
+    "email":  ["larisd@mail.ru", "kara@mail.ru", "tri9@mail.ru"],
+        
+    "password": "hUui7B" , 
+    "phone": {
+        "code": "+7924",
+        "number": 45332202
+    },
+    "userStatus": "true"
+}
+}
